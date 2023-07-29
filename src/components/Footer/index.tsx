@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from '@/components/Link'
-import Icon from '@/components/Icon'
+import Link from '../Link'
+import Icon from '../Icon'
 import styles from './Footer.module.scss'
 
 const Footer = () => {

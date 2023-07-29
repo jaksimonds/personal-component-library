@@ -1,11 +1,12 @@
 import React, { FC } from 'react'
-import Card from '@/components/Card'
-import Heading from '@/components/Heading'
+import Card from '../Card'
+import Heading from '../Heading'
 
 import styles from './CardSection.module.scss'
 
 interface ICardSection {
   heading: string
+  headingClass?: string
   iconCards?: boolean
   cards: {
     id: number
@@ -22,11 +23,12 @@ interface ICardSection {
 
 const CardSection: FC<ICardSection> = ({
   heading,
+  headingClass,
   iconCards,
   cards
 }) => (
   <section className={styles.section}>
-    <Heading className={styles.heading} level={2}>{heading}</Heading>
+    <Heading className={`${styles.heading} ${headingClass || ''}`} level={2}>{heading}</Heading>
     {cards.length && (
       <div className={styles.cards}>
         {cards.map((card) => {

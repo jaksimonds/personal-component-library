@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 
-import Heading from '@/components/Heading'
-import Link from '@/components/Link'
-import Icon from '@/components/Icon'
+import Heading from '../Heading'
+import Link from '../Link'
+import Icon from '../Icon'
 import styles from './Card.module.scss'
 
 interface ICard {
@@ -15,6 +15,7 @@ interface ICard {
   }
   name: string
   heading: string
+  headingClass?: string
   srHeading?: boolean
   content?: string
   cta?: {
@@ -28,12 +29,13 @@ const Card: FC<ICard> = ({
   iconCard,
   name,
   heading,
+  headingClass,
   srHeading,
   content,
   cta,
 }) => (
   <div className={styles.card}>
-    <Heading className={styles.heading} level={2}>
+    <Heading className={`${styles.heading} ${headingClass || ''}`} level={2}>
       {iconCard && srHeading ? (
         <>
           <span className='sr-only'>{heading}</span>

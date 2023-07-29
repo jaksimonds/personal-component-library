@@ -1,11 +1,12 @@
 import React, { FC } from 'react'
-import Heading from '@/components/Heading'
-import Link from '@/components/Link'
-import Icon from '@/components/Icon'
+import Heading from '../Heading'
+import Link from '../Link'
+import Icon from '../Icon'
 import styles from './Copy.module.scss'
 
 interface ICopy {
   heading?: string
+  headingClass?: string
   intro?: string
   children?: any
   link?: {
@@ -18,13 +19,14 @@ interface ICopy {
 
 const Copy: FC<ICopy> = ({
   heading,
+  headingClass,
   intro,
   children,
   link
 }) => (
   <section className={styles.section}>
     <div>
-      <Heading level={2}>{heading}</Heading>
+      <Heading level={2} className={headingClass || ''}>{heading}</Heading>
       {intro ? (
         <p className={styles.intro}>{intro}</p>
       ) : ''}

@@ -1,12 +1,13 @@
 import React, { FC } from 'react'
-import Link from '@/components/Link'
-import Image from '@/components/Image'
-import Heading from "@/components/Heading"
+import Link from '../Link'
+import Image from '../Image'
+import Heading from "../Heading"
 
 import styles from './TwoColumnCallout.module.scss'
 
 interface ITwocolumnCallout {
   heading?: string
+  headingClass?: string
   copy?: string
   slug?: string
   url?: string
@@ -18,6 +19,7 @@ interface ITwocolumnCallout {
 
 const TwoColumnCallout: FC<ITwocolumnCallout> = ({
   heading,
+  headingClass,
   copy,
   slug,
   url,
@@ -28,7 +30,7 @@ const TwoColumnCallout: FC<ITwocolumnCallout> = ({
 }) => (
   <section className={`${styles.section} ${alternate ? styles.sectionAlt : ''}`}>
     <div className={styles.copy}>
-      {heading && <Heading level={2}>{heading}</Heading>}
+      {heading && <Heading level={2} className={headingClass || ''}>{heading}</Heading>}
       {copy && <p className={styles.content}>{copy}</p>}
       {children && <div className={styles.children}>{children}</div>}
       {slug && (

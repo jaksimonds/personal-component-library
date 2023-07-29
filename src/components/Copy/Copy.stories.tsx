@@ -11,6 +11,7 @@ type Story = StoryObj<typeof Copy>
 export const Primary: Story = {
   args: {
     heading: 'Heading',
+    headingClass: '',
     intro: 'Intro paragraph goes here.',
     children: 'this is for some extra content',
     link: {

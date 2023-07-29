@@ -13,6 +13,7 @@ export const Primary: Story = {
     iconCard: false,
     name: '',
     heading: 'Heading',
+    headingClass: '',
     srHeading: false,
     content: 'Intro paragraph goes here.',
     cta: {

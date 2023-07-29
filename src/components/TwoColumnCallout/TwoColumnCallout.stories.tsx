@@ -11,6 +11,7 @@ type Story = StoryObj<typeof TwoColumnCallout>
 export const Primary: Story = {
   args: {
     heading: "Heading",
+    headingClass: '',
     copy: "This is a collection of copy.",
     slug: 'slug',
     url: 'https://jaksimonds.dev/',

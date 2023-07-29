@@ -12,6 +12,7 @@ export const Primary: Story = {
   args: {
     iconCards: false,
     heading: 'Heading',
+    headingClass: '',
     cards: [
       {
         id: 0,

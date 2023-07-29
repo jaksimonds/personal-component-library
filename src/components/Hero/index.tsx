@@ -1,12 +1,13 @@
 import React, { FC } from 'react'
-import Heading from '@/components/Heading'
-import Image from '@/components/Image'
-import Link from '@/components/Link'
+import Heading from '../Heading'
+import Image from '../Image'
+import Link from '../Link'
 
 import styles from './Hero.module.scss'
 
 interface IHero {
   heading: string
+  headingClass?: string
   url?: string
   intro?: string
   image?: string
@@ -15,6 +16,7 @@ interface IHero {
 
 const Hero: FC<IHero> = ({
   heading,
+  headingClass,
   url,
   intro,
   image,
@@ -22,7 +24,7 @@ const Hero: FC<IHero> = ({
 }) => (
   <section className={`${styles.section} ${simple ? styles.simple : ''}`}>
     <div className={styles.copy}>
-      <Heading level={1}>{heading}</Heading>
+      <Heading level={1} className={headingClass || ''}>{heading}</Heading>
       {url ? (
         <Link className={styles.link} href={url}>View site</Link>
       ) : ''}

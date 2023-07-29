@@ -22,7 +22,6 @@
       "ESNext",
       "DOM"
     ],
-    "incremental": true,
     "baseUrl": "src/",
     "paths": {
       "@/styles/*": ["styles/*"],
