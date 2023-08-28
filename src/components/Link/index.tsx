@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-interface ILink {
+export interface ILink {
   className?: string
   href: string
   children: any
@@ -17,12 +17,10 @@ const Link: FC<ILink> = ({
 }) => {
   let NextLink = null;
 
-  if (typeof window !== 'undefined') {
-    try {
-      NextLink = require('next/link').default;
-    } catch {
-      console.log('Not using Next.js');
-    }
+  try {
+    NextLink = require('next/link').default;
+  } catch {
+    console.log('Not using Next.js');
   }
 
   const LinkComponent = NextLink || 'a';

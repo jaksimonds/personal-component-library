@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-interface IImage {
+export interface IImage {
   className?: string;
   src: string;
   alt?: string;
@@ -19,12 +19,10 @@ const Image: FC<IImage> = ({
 }) => {
   let NextImage = null;
 
-  if (typeof window !== 'undefined') {
-    try {
-      NextImage = require('next/image').default;
-    } catch {
-      console.log('Not using Next.js');
-    }
+  try {
+    NextImage = require('next/image').default;
+  } catch {
+    console.log('Not using Next.js');
   }
 
   const ImageComponent = NextImage || 'img';
