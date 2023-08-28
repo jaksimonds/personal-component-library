@@ -5,7 +5,7 @@ import Link from '../Link'
 import Icon from '../Icon'
 import styles from './Card.module.scss'
 
-interface ICard {
+export interface ICard {
   iconCard?: boolean
   image?: {
     src: string

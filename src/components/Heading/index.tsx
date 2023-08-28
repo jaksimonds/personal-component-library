@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-interface IHeading {
+export interface IHeading {
   level: number
   className?: string
   children: any
