@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Copy from './index'
 
 const meta: Meta<typeof Copy> = {
-  title: "Components/Copy",
+  title: 'Components/Copy',
   component: Copy,
 }
 

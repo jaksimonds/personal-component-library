@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import CardSection from './index'
 
 const meta: Meta<typeof CardSection> = {
-  title: "Components/CardSection",
+  title: 'Components/CardSection',
   component: CardSection,
 }
 

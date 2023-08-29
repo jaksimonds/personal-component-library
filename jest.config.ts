@@ -1,4 +1,4 @@
-import type {Config} from 'jest';
+import type {Config} from 'jest'
 
 const config: Config = {
   clearMocks: true,
@@ -7,11 +7,11 @@ const config: Config = {
     './src/**/*.tsx',
     '!./src/**/*.stories.tsx'
   ],
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
   },
-  testEnvironment: "jsdom",
-};
+  testEnvironment: 'jsdom',
+}
 
-export default config;
+export default config

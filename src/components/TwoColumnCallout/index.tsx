@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Link from '../Link'
 import Image from '../Image'
-import Heading from "../Heading"
+import Heading from '../Heading'
 
 import styles from './TwoColumnCallout.module.scss'
 

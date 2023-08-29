@@ -15,15 +15,16 @@ const Link: FC<ILink> = ({
   target,
   hideExternal
 }) => {
-  let NextLink = null;
+  let NextLink = null
 
   try {
-    NextLink = require('next/link').default;
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    NextLink = require('next/link').default
   } catch {
-    console.log('Not using Next.js');
+    console.log('Not using Next.js')
   }
 
-  const LinkComponent = NextLink || 'a';
+  const LinkComponent = NextLink || 'a'
 
   return (
     <LinkComponent className={className} href={href} target={target}>
