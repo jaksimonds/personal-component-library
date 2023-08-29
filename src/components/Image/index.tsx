@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
 
 export interface IImage {
   className?: string;
@@ -17,15 +17,16 @@ const Image: FC<IImage> = ({
   height,
   loading
 }) => {
-  let NextImage = null;
+  let NextImage = null
 
   try {
-    NextImage = require('next/image').default;
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    NextImage = require('next/image').default
   } catch {
-    console.log('Not using Next.js');
+    console.log('Not using Next.js')
   }
 
-  const ImageComponent = NextImage || 'img';
+  const ImageComponent = NextImage || 'img'
 
   return (
     <ImageComponent
@@ -36,7 +37,7 @@ const Image: FC<IImage> = ({
       height={height || 0}
       loading={loading || 'lazy'}
     />
-  );
-};
+  )
+}
 
-export default Image;
+export default Image

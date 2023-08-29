@@ -3,13 +3,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Icon from './index'
 
 const meta: Meta<typeof Icon> = {
-  title: "Components/Icon",
+  title: 'Components/Icon',
   component: Icon,
   decorators: [
     (Story) => (
       <div>
         <Story />
-        <style dangerouslySetInnerHTML={{__html: `svg {width: 200px;}`}} />
+        <style dangerouslySetInnerHTML={{__html: 'svg {width: 200px;}'}} />
       </div>
     )
   ]

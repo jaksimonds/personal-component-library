@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
 import React, { FC } from 'react'
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
