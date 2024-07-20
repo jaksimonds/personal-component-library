@@ -6,7 +6,7 @@ const meta: Meta<typeof Copy> = {
   component: Copy,
 }
 
-type Story = StoryObj<typeof Copy>
+type Story = StoryObj<typeof Copy>;
 
 export const Primary: Story = {
   args: {
@@ -18,9 +18,9 @@ export const Primary: Story = {
       href: 'https://jaksimonds.dev/',
       icon: '',
       text: 'Link',
-      target: '_blank'
-    }
-  }
+      target: '_blank',
+    },
+  },
 }
 
 export default meta

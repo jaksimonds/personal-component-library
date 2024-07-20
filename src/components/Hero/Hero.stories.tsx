@@ -6,7 +6,7 @@ const meta: Meta<typeof Hero> = {
   component: Hero,
 }
 
-type Story = StoryObj<typeof Hero>
+type Story = StoryObj<typeof Hero>;
 
 export const Primary: Story = {
   args: {
@@ -16,7 +16,7 @@ export const Primary: Story = {
     intro: 'Intro paragraph goes here.',
     image: 'https://api.jaksimonds.dev/assets/culvers-thumbnail.webp',
     simple: false,
-  }
+  },
 }
 
 export default meta
