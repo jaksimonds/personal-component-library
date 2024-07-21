@@ -6,7 +6,7 @@ const meta: Meta<typeof Card> = {
   component: Card,
 }
 
-type Story = StoryObj<typeof Card>
+type Story = StoryObj<typeof Card>;
 
 export const Primary: Story = {
   args: {
@@ -19,9 +19,9 @@ export const Primary: Story = {
     cta: {
       href: 'https://jaksimonds.dev/',
       text: 'Link',
-      target: '_blank'
+      target: '_blank',
     },
-  }
+  },
 }
 
 export default meta

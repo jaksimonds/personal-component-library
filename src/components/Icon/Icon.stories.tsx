@@ -9,18 +9,18 @@ const meta: Meta<typeof Icon> = {
     (Story) => (
       <div>
         <Story />
-        <style dangerouslySetInnerHTML={{__html: 'svg {width: 200px;}'}} />
+        <style dangerouslySetInnerHTML={{ __html: 'svg {width: 200px;}' }} />
       </div>
-    )
-  ]
+    ),
+  ],
 }
 
-type Story = StoryObj<typeof Icon>
+type Story = StoryObj<typeof Icon>;
 
 export const Primary: Story = {
   args: {
     name: 'next',
-    simple: false
+    simple: false,
   },
   argTypes: {
     name: {
@@ -48,10 +48,10 @@ export const Primary: Story = {
         'bitbucket',
         'azuredevops',
         'docker',
-        'email'
-      ]
-    }
-  }
+        'email',
+      ],
+    },
+  },
 }
 
 export default meta

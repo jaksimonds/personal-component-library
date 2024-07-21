@@ -6,7 +6,7 @@ const meta: Meta<typeof TwoColumnCallout> = {
   component: TwoColumnCallout,
 }
 
-type Story = StoryObj<typeof TwoColumnCallout>
+type Story = StoryObj<typeof TwoColumnCallout>;
 
 export const Primary: Story = {
   args: {
@@ -18,8 +18,8 @@ export const Primary: Story = {
     image: 'https://api.jaksimonds.dev/assets/culvers-thumbnail.webp',
     alternate: false,
     children: 'extra content',
-    loading: 'eager'
-  }
+    loading: 'eager',
+  },
 }
 
 export default meta

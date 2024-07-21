@@ -6,7 +6,7 @@ const meta: Meta<typeof CardSection> = {
   component: CardSection,
 }
 
-type Story = StoryObj<typeof CardSection>
+type Story = StoryObj<typeof CardSection>;
 
 export const Primary: Story = {
   args: {
@@ -22,11 +22,11 @@ export const Primary: Story = {
         cta: {
           href: '',
           target: '_blank',
-          text: ''
-        }
-      }
-    ]
-  }
+          text: '',
+        },
+      },
+    ],
+  },
 }
 
 export default meta

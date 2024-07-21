@@ -6,7 +6,7 @@ const meta: Meta<typeof Image> = {
   component: Image,
 }
 
-type Story = StoryObj<typeof Image>
+type Story = StoryObj<typeof Image>;
 
 export const Primary: Story = {
   args: {
@@ -15,8 +15,8 @@ export const Primary: Story = {
     alt: 'test alt',
     width: 1700,
     height: 1060,
-    loading: 'eager'
-  }
+    loading: 'eager',
+  },
 }
 
 export default meta

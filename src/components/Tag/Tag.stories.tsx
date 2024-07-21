@@ -6,12 +6,12 @@ const meta: Meta<typeof Tag> = {
   component: Tag,
 }
 
-type Story = StoryObj<typeof Tag>
+type Story = StoryObj<typeof Tag>;
 
 export const Primary: Story = {
   args: {
-    label: 'Tag Label'
-  }
+    label: 'Tag Label',
+  },
 }
 
 export default meta

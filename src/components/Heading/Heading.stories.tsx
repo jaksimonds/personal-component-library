@@ -6,14 +6,14 @@ const meta: Meta<typeof Heading> = {
   component: Heading,
 }
 
-type Story = StoryObj<typeof Heading>
+type Story = StoryObj<typeof Heading>;
 
 export const Primary: Story = {
   args: {
     level: 1,
     className: 'test',
-    children: 'Heading'
-  }
+    children: 'Heading',
+  },
 }
 
 export default meta

@@ -6,10 +6,10 @@ const meta: Meta<typeof Footer> = {
   component: Footer,
 }
 
-type Story = StoryObj<typeof Footer>
+type Story = StoryObj<typeof Footer>;
 
 export const Primary: Story = {
-  args: {}
+  args: {},
 }
 
 export default meta

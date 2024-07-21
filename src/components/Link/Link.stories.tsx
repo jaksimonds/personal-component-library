@@ -6,7 +6,7 @@ const meta: Meta<typeof Link> = {
   component: Link,
 }
 
-type Story = StoryObj<typeof Link>
+type Story = StoryObj<typeof Link>;
 
 export const Primary: Story = {
   args: {
@@ -15,7 +15,7 @@ export const Primary: Story = {
     children: 'Link',
     target: '_blank',
     hideExternal: false,
-  }
+  },
 }
 
 export default meta
