@@ -1,3 +1,4 @@
+
 import type {Config} from 'jest'
 
 const config: Config = {
@@ -8,6 +9,9 @@ const config: Config = {
     '!./src/**/*.stories.tsx'
   ],
   coverageDirectory: 'coverage',
+  transform: {
+    '^.+.tsx?$': ['ts-jest',{}],
+  },
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
   },
