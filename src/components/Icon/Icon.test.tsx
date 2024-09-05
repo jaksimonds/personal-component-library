@@ -269,4 +269,11 @@ describe('Icon', () => {
     const icon = container.querySelector('svg')
     expect(icon).toBeInTheDocument()
   })
+
+  test('tests bluesky icon', () => {
+    const { container } = render(<Icon name='bluesky' />)
+
+    const icon = container.querySelector('svg')
+    expect(icon).toBeInTheDocument()
+  })
 })
