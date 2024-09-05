@@ -21,9 +21,9 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link className={styles.socialLink} href='https://twitter.com/Billy_Mays3' hideExternal>
-              <span className='sr-only'>Find me on Twitter</span>
-              <Icon name='twitter' simple />
+            <Link className={styles.socialLink} href='https://bsky.app/profile/jakobijobi.bsky.social' hideExternal>
+              <span className='sr-only'>Find me on BlueSky</span>
+              <Icon name='bluesky' simple />
             </Link>
           </li>
           <li>
