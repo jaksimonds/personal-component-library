@@ -1,6 +1,6 @@
 {
   "name": "@jsimonds/component-library",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -34,8 +34,8 @@
     "@testing-library/react": "^16.0.0",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.8.1",
     "eslint": "^8.48.0",
     "eslint-plugin-react": "^7.33.2",
     "identity-obj-proxy": "^3.0.0",
